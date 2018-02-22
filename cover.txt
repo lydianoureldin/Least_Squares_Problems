@@ -1,0 +1,59 @@
+Results obtained from Least-Squares Computations
+
+Lydia Noureldin 
+April 11 2017 
+
+Part 1 (Least-Squares Crossing Lines):
+The focus that was generated is [5.0844; 5.1362; 20.5131].
+The RMS error obtained was 0.2970.
+
+Part 2 (Least-Squares Planar Registration):
+1. aP.dat and aQ.dat
+
+Estimated rotation Matrix: R = [ 0.5183 -0.8552; 0.8552 0.5183]
+
+Estimated translation vector: t =[ -1.6111; -5.4188]
+
+RMS error: RMSerror = 0.1621
+
+2. bP.dat and bQ.dat
+
+Estimated rotation Matrix: R = [-0.7105 0.7037; -0.7037 -0.7105]
+
+Estimated translation vector: t = [-3.1415; 1.6180]
+
+RMS error: RMSerror = 0.1513
+
+The translation vector contained the familiar constants -pi and phi.
+
+3. cP.dat and cQ.dat
+
+Estimated rotation Matrix: R = [-0.7034 0.7108; -0.7108 -0.7034]
+
+Estimated translation vector: t = [-3.3106; 1.5086]
+
+RMS error: RMSerror = 0.6307
+
+data represented an ellipse, which consequently had a higher RMS error. This is due to the
+
+outlier data that may have significantly impacted the mean, which is used to calculate the RMS
+
+error.
+
+4. dP.dat and dQ.dat
+
+Estimated rotation Matrix: R = [ 0 NaN; 0 NaN]
+
+Estimated translation vector: t = [NaN; NaN]
+
+RMS error: RMSerror = NaN
+
+Harder to solve because r phi is 0, and so the norm function will
+
+produce NaN when it tries to compute 0/0. As expected, this resulted in the translation vector to
+
+contain only 0s. This means that there is no planar displacement, but we know that there is!
+
+These strange results are because the dP contains two points that are the same, but these are
+
+not plotted to the same values in dQ.
