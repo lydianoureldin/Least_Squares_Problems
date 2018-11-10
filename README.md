@@ -12,6 +12,7 @@ There is a set of data that are on the XY plane and a matching set of data in sp
 Least-Squares Planar Registration (Part 2):
 Given corresponding sets of XY points. These points are rotated, translated, and may have “noise” added to simulate a real-world situation. This function will recover the least-squares rotation matrix and translation vector that brings each point from the original set to the translated set. 
 
-Running instructions:
+Instructions for running:
+
 1. Execute the Matlab command “A4Q1”. The data is in a file of Matlab code that creates the data for you. If you execute the Matlab command A4Q1 then you will find the variables PlanarPoints and SpatialPointsthat are the data. 
 2. Execute the main function 
