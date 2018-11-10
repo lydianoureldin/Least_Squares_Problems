@@ -2,7 +2,7 @@
 Lydia Noureldin 
 April 11 2017
 
-Least-Squares Problems implemented in MATLAB 7
+Least-Squares Problems implemented in MATLAB 7.
 
 Please refer to the technical document for an in-depth explanation of the problems, algorithm and code.
 
